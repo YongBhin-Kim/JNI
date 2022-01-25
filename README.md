@@ -1,43 +1,43 @@
 # JNI
-Starting JNI in Mac vscode environment.
+<h3>Starting JNI in Mac vscode environment.<h3>
+<h4>본 소스코드 경로는 [projectname]/src/* 이다.</h4>
 
-본 소스코드 경로는 [projectname]/src/* 이다.
+1. Java 소스코드 작성<br>
+    Decline native, load library (helloJNI.java 소스코드 참조)<br>
 
-1. [helloJNI].java 아래에 native를 선언하고 library를 load해준다.
-
-2. 클래스 파일 생성
-    $ javac [helloJNI].java 명령을 수행한다.
-        --> [helloJNI].class 파일이 생성된다.
-
-3. 헤더 생성
-    $ javah -JNI [helloJNI]         (구 버전)
-
-    $ javac [helloJNI].java -h .    (신 버전)
+2. 클래스 파일 생성<br>
     
-    
-        --> 헤더 includepath 오류가 뜬다면 C/C++ Configurations 경로를 다음과 같이 수정해준다.
-            /Applications/**
-            /Users/[사용자 이름]/Desktop/**
+       $ javac [helloJNI].java
+      * create [helloJNI].class
 
-4. C or C++ 소스코드 작성(첨부 소스코드)
+3. 헤더 생성<br>
+    
+       $ javah -JNI [helloJNI]         (구 버전)
+       $ javac [helloJNI].java -h .    (신 버전)
+       
+      * 헤더 includepath 오류가 뜬다면 C/C++ Configurations 경로를 다음과 같이 수정해준다.
+                  
+       /Applications/**
+       /Users/[사용자 이름]/Desktop/**
+
+4. C or C++ 소스코드 작성(helloJNI.cpp 소스코드 참조)
 
 5. 라이브러리 컴파일
 * [Java <=> C]
-
-        $ gcc -I”/[JDK 경로]/Contents/Home/include" -I”/[JDK 경로]/Contents/Home/include/darwin" -o lib[라이브러리명].jnilib -shared [패키지명].c
+   
+      $ gcc -I”/[JDK 경로]/Contents/Home/include" -I”/[JDK 경로]/Contents/Home/include/darwin" -o lib[라이브러리명].jnilib -shared [패키지명].c
 
 * [Java <=> C++]
 
-        $ g++ -I"/[JDK 경로]/Contents/Home/include" -I"/[JDK 경로]/Contents/Home/include/darwin" -o lib[라이브러리명].jnilib -shared [패키지명].cpp
+      $ g++ -I"/[JDK 경로]/Contents/Home/include" -I"/[JDK 경로]/Contents/Home/include/darwin" -o lib[라이브러리명].jnilib -shared [패키지명].cpp
 
-    --> lib[라이브러리명 : helloJNI].jnilib 생성
+     * lib[라이브러리명].jnilib 생성
 
-* 세팅 완료
-
-컴파일 : 라이브러리 참조 가져오기
+* 세팅 완료 및 컴파일<br>
+   * 라이브러리 참조 가져오기
         
-    java -Djava.library.path=. [helloJNI]
+         $ java -Djava.library.path=. [helloJNI]
 
-java 직접 컴파일
+   * java 직접 컴파일
 
-    java [helloJNI].java 
+         $ java [helloJNI].java 
