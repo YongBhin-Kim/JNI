@@ -36,7 +36,8 @@ Starting JNI in Mac vscode environment.
 
 컴파일 : 라이브러리 참조 가져오기
         
-       java -Djava.library.path=. [helloJNI]
+    java -Djava.library.path=. [helloJNI]
 
 java 직접 컴파일
-       java [helloJNI].java 
+
+    java [helloJNI].java 
