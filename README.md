@@ -1,27 +1,33 @@
 # JNI
 <h3>Starting JNI in Mac vscode environment.<h3>
-<h4>본 소스코드 경로는 [projectname]/src/* 이다.</h4>
 
+    
 1. Java 소스코드 작성<br>
     Decline native, load library (helloJNI.java 소스코드 참조)<br>
-
+<br>
+    
 2. 클래스 파일 생성<br>
     
-       $ javac [helloJNI].java
+      `$ javac [helloJNI].java` <br>
+    
       * create [helloJNI].class
-
+<br>
+    
 3. 헤더 생성<br>
     
-       $ javah -JNI [helloJNI]         (구 버전)
-       $ javac [helloJNI].java -h .    (신 버전)
-       
-      * 헤더 includepath 오류가 뜬다면 C/C++ Configurations 경로를 다음과 같이 수정해준다.
-                  
-       /Applications/**
-       /Users/[사용자 이름]/Desktop/**
-
+      `$ javah -JNI [helloJNI]         (구 버전)` <br>
+      `$ javac [helloJNI].java -h .    (신 버전)` <br>
+<br>
+    
+* 헤더 includepath 오류가 뜬다면 C/C++ Configurations 경로를 다음과 같이 수정해준다.<br>
+    
+     `/Applications/**` <br>
+     `/Users/[사용자 이름]/Desktop/**`<br>
+<br>
+    
 4. C or C++ 소스코드 작성(helloJNI.cpp 소스코드 참조)
-
+<br>
+    
 5. 라이브러리 컴파일
 * [Java <=> C]
    
