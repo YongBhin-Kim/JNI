@@ -32,18 +32,22 @@
 * [Java <=> C]
    
       $ gcc -I”/[JDK 경로]/Contents/Home/include" -I”/[JDK 경로]/Contents/Home/include/darwin" -o lib[라이브러리명].jnilib -shared [패키지명].c
+<br>
 
 * [Java <=> C++]
 
       $ g++ -I"/[JDK 경로]/Contents/Home/include" -I"/[JDK 경로]/Contents/Home/include/darwin" -o lib[라이브러리명].jnilib -shared [패키지명].cpp
 
      * lib[라이브러리명].jnilib 생성
-
-* 세팅 완료 및 컴파일<br>
+<br>
+    
+* 세팅 완료 및 컴파일
    * 라이브러리 참조 가져오기
         
-         $ java -Djava.library.path=. [helloJNI]
+        $ java -Djava.library.path=. [helloJNI]
+<br>
 
    * java 직접 컴파일
 
-         $ java [helloJNI].java 
+         $ java [helloJNI].java
+<br>
