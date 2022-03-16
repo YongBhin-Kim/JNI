@@ -9,21 +9,21 @@
 <br><br><br>
 
 
-**[1. 자바 소스코드 작성]** : `helloJNI.java` <Br>
+**[1. 자바 소스코드 작성]** : `helloJNI.java` <br>
 
 - Decline native <br> 
 <img width="366" height = "100" alt="image" src="https://user-images.githubusercontent.com/98372474/158514125-7a9a072c-6d55-4ee0-871b-103dc3a73fe4.png">
     
 - load library <br>
 <img width="343" alt="image" src="https://user-images.githubusercontent.com/98372474/158514175-ca310415-9bdb-43fb-9adb-1278da999370.png">
-<br><br>
+<br><br><br>
 
     
 **[2. 클래스 파일 생성]** <br>
 
 - 터미널에서 `$ javac [helloJNI].java` 명령 <br>
-: [helloJNI].class 파일이 생성된다. <br>
-<br><br>
+: `[helloJNI].class` 파일이 생성된다. <br>
+<br><br><br>
 
 
 **[3. 헤더 생성]** <br>
@@ -31,7 +31,7 @@
 - 자바의 버전에 따라 명령어가 달라진다.
 - `$ javah -JNI [helloJNI]         (구 버전)` <br>
 - `$ javac [helloJNI].java -h .    (신 버전)` <br>
-: [helloJNI].h 파일이 생성된다. <br>
+: `[helloJNI].h` 파일이 생성된다. <br>
 <br><br>
     
 - 헤더 includepath 오류가 뜬다면 C/C++ Configurations 경로를 다음과 같이 수정해준다.<br>
@@ -47,12 +47,12 @@
 
 [c_cpp_properties.json 파일] <br>
 <img width = "450" height = "200" src = "https://user-images.githubusercontent.com/98372474/158515078-fc9d7449-1fb1-46bd-9a4c-ad26238eeb84.png">
-<br><br>
+<br><br><br>
     
     
 **[4. C or C++ 소스코드 작성]** <br>
 <img width="450" height = "200" alt = "image" src = "https://user-images.githubusercontent.com/98372474/158515765-3ea0b62f-0fcc-41b0-84dd-cd581fabcad0.png">
-<br><br>
+<br><br><br>
     
 
 **[5. 라이브러리 컴파일]** <br>
@@ -62,13 +62,13 @@
 `$ gcc -I”/[JDK 경로]/Contents/Home/include" -I”/[JDK 경로]/Contents/Home/include/darwin" -o lib[라이브러리명].jnilib -shared [패키지명].c` <br>
 <br>
 
--[Java <=> C++] <br>
+- [Java <=> C++] <br>
     
 `$ g++ -I"/[JDK 경로]/Contents/Home/include" -I"/[JDK 경로]/Contents/Home/include/darwin" -o lib[라이브러리명].jnilib -shared [패키지명].cpp` <br>
 <br>
 
-: lib[라이브러리명].jnilib 생성
-<br><br>
+: `lib[라이브러리명].jnilib` 생성
+<br><br><br>
     
 **[세팅 완료 및 컴파일]** <br>
     
@@ -80,5 +80,10 @@
 [java 직접 컴파일] <br>
     
 - `$ java [helloJNI].java` <br>
-<br>
+<br><br><br>
     
+    
+**[컴파일 결과]** <br>
+
+![image](https://user-images.githubusercontent.com/98372474/158517275-2b799358-4341-474d-af48-38303c0a856c.png)
+
