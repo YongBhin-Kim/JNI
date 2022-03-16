@@ -14,7 +14,7 @@
 - Decline native <br> 
 <img width="366" height = "100" alt="image" src="https://user-images.githubusercontent.com/98372474/158514125-7a9a072c-6d55-4ee0-871b-103dc3a73fe4.png">
     
-- load library <br>
+- Load library <br>
 <img width="343" alt="image" src="https://user-images.githubusercontent.com/98372474/158514175-ca310415-9bdb-43fb-9adb-1278da999370.png">
 <br><br><br>
 
@@ -29,8 +29,8 @@
 **[3. 헤더 생성]** <br>
 
 - 자바의 버전에 따라 명령어가 달라진다.
-- `$ javah -JNI [helloJNI]         (구 버전)` <br>
-- `$ javac [helloJNI].java -h .    (신 버전)` <br>
+- `$ javah -JNI [helloJNI]         `(구 버전) <br>
+- `$ javac [helloJNI].java -h .    `(신 버전) <br>
 : `[helloJNI].h` 파일이 생성된다. <br>
 <br><br>
     
@@ -45,7 +45,7 @@
 [오류] <br>
 <img width ="400" height="250" alt = "image" src="https://user-images.githubusercontent.com/98372474/158515058-35238761-2a13-47d3-8344-e09144127345.png">
 
-[c_cpp_properties.json 파일] <br>
+[c_cpp_properties.json 파일] : "includePath" 수정 <br>
 <img width = "450" height = "200" src = "https://user-images.githubusercontent.com/98372474/158515078-fc9d7449-1fb1-46bd-9a4c-ad26238eeb84.png">
 <br><br><br>
     
