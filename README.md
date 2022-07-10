@@ -20,7 +20,7 @@
 <br><br><br>
 
     
-**[2. 클래스 파일 생성]** <br>
+**[2. 클래스파일 생성]** <br>
 
 - 터미널에서 `$ javac [helloJNI].java` 명령 <br>
 : `[helloJNI].class` 파일이 생성된다. <br>
