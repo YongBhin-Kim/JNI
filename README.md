@@ -1,12 +1,11 @@
 <h2>Starting JNI</h2>
 
     
-**[Use]** <br>
+**[Environment]** <br>
 - Mac OS
 - Visual Studio Code2
 - G++ version 4.2.1
 - Java version 17.0.1
-- 모든 명령은 MacBook Pro Terminal에서 진행하였습니다.
 <br><br><br>
 
 
