@@ -1,4 +1,4 @@
-<h2>Starting JNI in Mac vscode environment.</h2>
+<h2>Starting JNI</h2>
 
     
 **[Use]** <br>
