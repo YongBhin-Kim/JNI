@@ -1,4 +1,4 @@
-<h2>Starting JNI</h2>
+<h2>Starting JNI(Java Native Interface)</h2>
 
     
 **[Environment]** <br>
