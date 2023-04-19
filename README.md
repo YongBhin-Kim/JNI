@@ -3,7 +3,7 @@
     
 **[Environment]** <br>
 - Mac OS
-- Visual Studio Code2
+- Visual Studio Code 2
 - G++ version 4.2.1
 - Java version 17.0.1
 <br><br><br>
